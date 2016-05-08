@@ -3,7 +3,7 @@
 This is a proof of concept of a methodology for measuring the similarity
 of people on the nownownow.com website.
 
-More information: https://www.matthowlett.com/n3simiarity.html
+More information: https://www.matthowlett.com/2016-05-07-n3similarity.html
 
 
 ### Getting it running:
