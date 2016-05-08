@@ -59,3 +59,15 @@ public class Crawl {
     return result;
   }
 }
+
+/*
+  notes relating to crawler v2:
+
+  urls   person-hash: type, url
+  pages  person-hash: type, data
+    -> parse page
+       1. produce new urls
+       2. produce models
+  models
+    ->   person-hash: word-model
+ */

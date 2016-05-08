@@ -36,7 +36,7 @@ public class Main {
     for (int i=0; i<p1words.length; ++i) {
       String word = (String)p1words[i];
       if (p2.words.containsKey(word)) {
-        sum += p1.words.get(word) * p2.words.get(word);
+        sum += p1.words.get(word);
       }
     }
     return sum;

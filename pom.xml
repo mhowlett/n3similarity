@@ -8,7 +8,27 @@
     <artifactId>n3similarity</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <repositories>
+        <repository>
+            <id>confluent</id>
+            <url>http://packages.confluent.io/maven/</url>
+        </repository>
+        <repository>
+            <id>confluent-staging</id>
+            <url>http://staging-confluent-packages-maven-2.1.0.s3.amazonaws.com/maven/</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <kafka.scala.version>2.11</kafka.scala.version>
+        <kafka.version>0.9.1.0-cp1</kafka.version>
+        <confluent.version>2.1.0-alpha1</confluent.version>
+        <avro.version>1.7.7</avro.version>
+        <guice.version>4.0</guice.version>
+    </properties>
+
     <dependencies>
+
         <dependency>
             <groupId>org.jsoup</groupId>
             <artifactId>jsoup</artifactId>
@@ -24,6 +44,39 @@
             <artifactId>json</artifactId>
             <version>20160212</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-avro-serializer</artifactId>
+            <version>${confluent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_${kafka.scala.version}</artifactId>
+            <version>${kafka.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>${avro.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-nop</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-streams</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
+
     </dependencies>
 
     <build>

@@ -8,7 +8,7 @@ More information: https://www.matthowlett.com/n3simiarity.html
 
 ### Getting it running:
 
-No tagger models have been included in this repository. To get a suitable model in the location
+No POS tagger models have been included in this repository. To get a suitable model in the location
 expected by n3similarity, download the Stanford POS tagger distribution [english only, version
 3.6] to /data/taggers and unzip it. This is available from:
 
